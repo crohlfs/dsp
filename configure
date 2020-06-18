@@ -58,7 +58,6 @@ for i in "$@"; do
 		--mandir=*)               MANDIR="${i#--mandir=}" ;;
 		--no-config) ;;
 		--help) echo "$USAGE"; exit 0 ;;
-		*) echo "error: invalid option: $i"; echo "$USAGE"; exit 1 ;;
 	esac
 done
 
